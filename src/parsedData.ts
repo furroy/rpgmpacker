@@ -695,7 +695,7 @@ function parseAnimations(path: Path, res: ParsedData, version: RPGMakerVersion) 
 
       specialPush(res.effectNames, mzAnimation.effectName);
 
-      for (const timing of mzAnimation.soundTimings) {
+      for (const timing of mzAnimation.soundTimings ?? []) {
         if (timing === null) continue;
         if (timing.se === null) continue;
         specialPush(res.seNames, timing.se.name);

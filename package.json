@@ -11,7 +11,7 @@
   ],
   "main": "./dist/index.js",
   "bin": {
-    "rpgmpacket": "./dist/index.js"
+    "rpgmpacker": "./dist/index.js"
   },
   "files": [
     "dist"
